@@ -1,0 +1,162 @@
+body{
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:unset;
+  background-color:#f3cfb4;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #883045;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: wheat;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 20px;
+
+}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color:#a88185; opacity: 80%}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+  border-radius: 8px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 30px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: firebrick;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.imgg{
+  font-size: 30px;
+  font-family: Copperplate, Papyrus, fantasy;
+  padding: 40px;
+}
+.about{
+  opacity: 75%;
+  padding: 50px;
+  font-size: 20px;
+  color: wheat;
+  font-family: Copperplate, Papyrus, fantasy;
+  background-color: black;
+  
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  .b1 {
+  background-color: black; 
+  color: ghostwhite; 
+  border: 2px solid aliceblue;
+  padding: 0px 0px;
+  text-align: center;
+ }
+  .b2
+ {
+  background-color: black; 
+  color: ghostwhite; 
+  border: 2px solid aliceblue;
+  padding: 0px 0px;
+  font-size: 20px;
+}
+#myVideo{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+    header {
+      color: white;
+      padding: 1em;
+      font-size: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+     

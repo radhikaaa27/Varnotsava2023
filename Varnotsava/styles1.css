@@ -1,0 +1,116 @@
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: wheat;
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent;
+    color: wheat;
+    opacity: 80%;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: black;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+}
+
+/* Optional: Add some spacing and styling */
+section {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#myVideo{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+h1{
+    color: wheat;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 40px;
+    background-color: black;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:unset;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #883045;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: wheat;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 20px;
+
+}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color:#a88185; opacity: 80%}
+
+ul.topnav li.right {float: right;}
+.b1 {
+  background-color: black; 
+  color: ghostwhite; 
+  border: 2px solid aliceblue;
+  padding: 0px 0px;
+  text-align: center;
+ }
+  .b2
+ {
+  background-color: black; 
+  color: ghostwhite; 
+  border: 2px solid aliceblue;
+  padding: 0px 0px;
+  font-size: 20px;
+}

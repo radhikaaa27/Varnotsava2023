@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+	<style>
+		#myVideo{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+   	 body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+     .content {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 20px;
+      font-size: 50px;
+      font-weight: 900;
+      color: mintcream;
+     font-family: Copperplate, Papyrus, fantasy;
+
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: white;
+      color: wheat;
+      font-family: monospace;
+      font-weight:900;
+    }
+   
+
+	</style>
+</head>
+<body>
+	<video autoplay muted loop id="myVideo">
+  <source src="vid6.mp4" type="video/mp4">
+</video>
+ <div class="content">
+    <p>WELCOME TO VARNOTSAVA 2023!</p>
+    
+  </div>
+
+  <button><a href="webcraft.html">ENTER</a></button>
+</body>

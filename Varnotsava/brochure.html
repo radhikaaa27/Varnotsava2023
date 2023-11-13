@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0; /* Optional: Set a background color for the page */
+    }
+
+    #contact-card {
+      opacity: 80%;
+      color: #fff;
+      padding: 20px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center; 
+      font-size: 25px;
+      font-family: Copperplate, Papyrus, fantasy;
+    }
+    #myVideo{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:unset;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #883045;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: wheat;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 20px;
+
+}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color:#a88185; opacity: 80%}
+
+ul.topnav li.right {float: right;}
+.b1 {
+  background-color: black; 
+  color: ghostwhite; 
+  border: 2px solid aliceblue;
+  padding: 0px 0px;
+  text-align: center;
+ }
+  .b2
+ {
+  background-color: black; 
+  color: ghostwhite; 
+  border: 2px solid aliceblue;
+  padding: 0px 0px;
+  font-size: 20px;
+}
+ button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #pdf-viewer {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="vid6.mp4" type="video/mp4">
+</video>
+<ul class="topnav">
+  <h2 style="color:white; font-size: 40px; font-family: Copperplate, Papyrus, fantasy; background-color: black;"><center><b>Varnotsava 2023!</b></center>
+  <li><a href="webcraft.html">Home</a></li>
+  <li><a href="#schedule">Schedule</a></li>
+  <li><a href="#brochure" class="active">Brochure</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+  <li class="right"><button class="b1"><a href="destination.html">
+Register Now!</a></button>
+<button class="b2"><a>View Registration</a></button></li></ul><br><br>
+  <div id="contact-card">
+<embed id="embedded-pdf" src="brochure.pdf" width="800px" height="2100px" />
+
+</body>
+</html>
