@@ -1,0 +1,103 @@
+<!doctype html>
+<head>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+  <source src="vid6.mp4" type="video/mp4">
+</video>
+<ul class="topnav">
+  <h2 style="color:white; font-size: 40px; font-family: Copperplate, Papyrus, fantasy; background-color: black;"><center><b>Varnotsava 2023!</b></center>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#schedule">Schedule</a></li>
+  <li><a href="brochure.html">Brochure</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <li class="right"><button class="b1"><a href="destination.html">
+Register Now!</a></button>
+<button class="b2"><a>View Registration</a></button></li></ul><br>
+<header>
+<div class="about"><b><i>Welcome to Varnotsava 2023!</i></b><br><br><b>Join us for a spectacular showcase of creativity and skill at this year's Varnotsava, our annual festival that promises a riot of colors and a burst of talent! Experience a day filled with thrilling competitions, mesmerizing performances, and a vibrant display of artistic expressions by our talented students.<br>
+Date: [Date]<br>
+ Time: [Time]<br>
+Venue: [Venue]<br>
+Let's come together to celebrate the spirit of creativity, witness incredible talents, and create memories that will last a lifetime. Don't miss out on the festivities, laughter, and the joyous atmosphere that makes Varnotsava an event to remember!
+
+</b></div>
+</header>
+<div class="imgg" style="color: white;"align="center"; > Photo Gallery </div>
+<div class="slideshow-container" align="center">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="1.jpg" style="width:50%" align="center">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="2.jpg" style="width:50%" align="center">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3/ 4</div>
+  <img src="4.jpg" style="width:50%" align="center">
+  <div class="text"></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="7.jpg" style="width:50%" align="center">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</style>
+</head>
+
+</body>
+</html>
